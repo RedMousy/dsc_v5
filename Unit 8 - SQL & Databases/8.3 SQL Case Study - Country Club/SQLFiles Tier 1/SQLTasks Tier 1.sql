@@ -37,6 +37,9 @@ Write a SQL query to produce a list of the names of the facilities that do. */
 
 /* Q2: How many facilities do not charge a fee to members? */
 
+SELECT COUNT(*)
+FROM country_club.Facilities
+WHERE membercost = '0.0';
 
 /* Q3: Write an SQL query to show a list of facilities that charge a fee to members,
 where the fee is less than 20% of the facility's monthly maintenance cost.
@@ -44,14 +47,17 @@ Return the facid, facility name, member cost, and monthly maintenance of the
 facilities in question. */
 
 
+
 /* Q4: Write an SQL query to retrieve the details of facilities with ID 1 and 5.
 Try writing the query without using the OR operator. */
+
 
 
 /* Q5: Produce a list of facilities, with each labelled as
 'cheap' or 'expensive', depending on if their monthly maintenance cost is
 more than $100. Return the name and monthly maintenance of the facilities
 in question. */
+
 
 
 /* Q6: You'd like to get the first and last name of the last member(s)
